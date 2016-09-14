@@ -1,9 +1,11 @@
 import React from 'react';
 
+import FlexRow from './FlexRow';
+
 export default ({children}) => {
   return (
-    <div id="container">
+  	<FlexRow className='container'>
       {children}
-    </div>
+    </FlexRow>
   );
 }

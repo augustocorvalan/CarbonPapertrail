@@ -43,8 +43,10 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ["react-hot", "babel-loader"] },
       { 
-        test: /\.css$/, 
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=1!postcss-loader') 
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') 
+
       },
       { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url-loader?limit=8192' }
     ]

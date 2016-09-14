@@ -4,7 +4,7 @@ import { routerMiddleware } from 'react-router-redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 
-import reducers from './reducers';
+import reducers from './modules';
 
 const devTools = window.devToolsExtension ? window.devToolsExtension() : f => f;
 
