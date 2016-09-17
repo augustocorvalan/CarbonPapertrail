@@ -1,0 +1,27 @@
+.episode-title {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: white;
+
+	&.show-full {
+		& .episode-title-short {
+			display: none;
+		}
+
+		& .episode-title-full, & .episode-subtitle {
+			display: block;
+		}
+	}
+
+}
+
+.episode-title-short {
+	display: block;
+}
+
+.episode-title-full, .episode-subtitle {
+	display: none;
+}
+
+
+

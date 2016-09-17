@@ -1,10 +1,17 @@
 import React from 'react';
+import classnames from 'classnames';
 import styles from '../styles/episode.css';
 
-const Episode = ({title = '', bgImage = ''}) => (
-	<div className='episode-wrapper' style={{ backgroundImage: `url(${bgImage})` }}>
-		<span className='episode-title'>{title}</span>
-	</div>
-);
+import EpisodeTitle from './EpisodeTitle';
+
+const Episode = ({episode, isActive, onClick }) => {
+	const wrapperClasses = classnames('episode-wrapper', { active: isActive });
+
+	return (
+		<div className={wrapperClasses} style={{ backgroundImage: `url(${episode.bgImage})` }} onClick={onClick}>
+			<EpisodeTitle fullTitle={episode.title} shortTitle={episode.short} showFull={isActive} />
+		</div>
+	);
+};
 
 export default Episode;

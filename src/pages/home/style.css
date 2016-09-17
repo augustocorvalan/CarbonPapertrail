@@ -1,0 +1,18 @@
+.container {
+	height: 100%;
+	overflow: auto;
+	max-width: 1920px;
+}
+
+.episodes {
+	transition: opacity 2s;
+	opacity: 1;
+
+	&.preload {
+	   position: absolute;
+	   overflow: hidden;
+	   left: -9999px; 
+	   top: -9999px;
+	   opacity: 0;
+	}
+}

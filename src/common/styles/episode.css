@@ -7,10 +7,15 @@
     font-size: 1.5em;
 	cursor: pointer;
 	background-size: cover;
+
+    /* to hide the image */
+    transition: background-color 0.5s ease, flex-grow 0.5s ease;
+    background-blend-mode: color-burn;
+    background-color: color(black alpha(-20%));
+
+    &.active {
+        background-color: transparent;
+        flex-grow: 4;
+    }
 }
 
-.episode-title {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    align-self: center;
-}

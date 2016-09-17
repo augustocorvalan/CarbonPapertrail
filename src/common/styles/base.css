@@ -9,8 +9,6 @@ html, body, #app {
     margin:0;
 }
 
-.container {
-	height: 100%;
-	overflow: auto;
-	max-width: 1920px;
+body {
+	background-color: black;
 }
