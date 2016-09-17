@@ -8,8 +8,9 @@ module.exports = {
   entry: "./src/main",
 
   output: {
-    path: __dirname + "/build/",
-    filename: "app.js"
+    path: __dirname + "/docs/",
+    filename: "app.js",
+    publicPath: 'augustocorvalan.github.io/CarbonPapertrail'
   },
 
   plugins: [
