@@ -9,7 +9,11 @@ const Episode = ({episode, isActive, onClick }) => {
 
 	return (
 		<div className={wrapperClasses} style={{ backgroundImage: `url(${episode.bgImage})` }} onClick={onClick}>
-			<EpisodeTitle fullTitle={episode.title} shortTitle={episode.short} showFull={isActive} />
+			<EpisodeTitle 
+				fullTitle={episode.title} 
+				subtitle={episode.subtitle}
+				shortTitle={episode.short} 
+				showFull={isActive} />
 		</div>
 	);
 };
