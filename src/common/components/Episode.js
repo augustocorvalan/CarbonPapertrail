@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
-import styles from '../styles/episode.css';
+import styles from 'common/styles/episode.css';
 
-import EpisodeTitle from './EpisodeTitle';
+import EpisodeTitle from 'common/components/EpisodeTitle';
 
 const Episode = ({episode, isActive, onClick }) => {
 	const wrapperClasses = classnames('episode-wrapper', { active: isActive });

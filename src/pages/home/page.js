@@ -4,9 +4,9 @@ import styles from "./style.css";
 import classnames from 'classnames';
 
 //components
-import LoadingScreen from '../../common/components/LoadingScreen';
-import FlexRow from '../../common/components/FlexRow';
-import Episode from '../../common/components/Episode';
+import LoadingScreen from 'common/components/LoadingScreen';
+import FlexRow from 'common/components/FlexRow';
+import Episode from 'common/components/Episode';
 
 //actions
 import { loadInitialEpisodes } from '../../modules/episodes';

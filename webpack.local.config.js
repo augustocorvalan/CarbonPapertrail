@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 /**
@@ -54,6 +55,7 @@ module.exports = {
 
   // Automatically transform files with these extensions
   resolve: {
+    root: path.resolve(__dirname, 'src'),
     extensions: ['', '.js', '.jsx', '.css']
   },
 

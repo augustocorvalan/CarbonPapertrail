@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../styles/flexRow.css';
+import style from 'common/styles/flexRow.css';
 import classnames from 'classnames';
 
 const FlexRow = ({ children, className, ...otherProps }) => (

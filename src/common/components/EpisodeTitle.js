@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import style from '../styles/episodeTitle.css';
+import style from 'common/styles/episodeTitle.css';
 
 const EpisodeTitle = ({fullTitle, subtitle, shortTitle, showFull}) => {
 	const className = classnames('episode-title', { 'show-full': showFull });

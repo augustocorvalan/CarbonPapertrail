@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/LoadingScreen.css';
+import styles from 'common/styles/LoadingScreen.css';
 import classnames from 'classnames';
 
 const texts = ['Loading', 'Loading.', 'Loading..', 'Loading...'];
