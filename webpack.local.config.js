@@ -24,12 +24,12 @@ module.exports = {
     "./src/main"
   ],
 
-  // This will not actually create a bundle.js file in ./build. It is used
+  // This will not actually create a bundle.js file in ./docs. It is used
   // by the dev server for dynamic hot loading.
   output: {
-    path: __dirname + "/build/",
+    path: __dirname + "/docs/",
     filename: "app.js",
-    publicPath: "http://localhost:9090/build/"
+    publicPath: "http://localhost:9090/docs/"
   },
 
   // Necessary plugins for hot load
