@@ -1,24 +1,25 @@
-import React from "react";
-import { connect } from 'react-redux';
-import style from 'pages/player/style.css';
+import React from 'react';
+import styles from 'common/styles/wall.css';
 
-import Wall from 'libraries/wall';
+//third-party library
+import Wall from 'libraries/Wall';
 
-class PlayerPage extends React.Component {
+class Wall extends React.Component {
 	componentDidMount() {
 		// Define The Wall
 		var maxLength    = 100; // Max Number images
 		var counterFluid = 1;
 		var wallFluid = new Wall("wall", {
+						"preload": true,
 		                "draggable":true,
 		                "inertia":true,
-		                "width":150,
-		                "height":150,
+		                "width":300,
+		                "height":300,
 		                "rangex":[-100,100],
 		                "rangey":[-100,100],
 		                callOnUpdate: function(items){
 		                    items.each(function(e, i){
-		                        var a = new Element("img[src='http://lorempixel.com/150/150/cats']");
+		                        var a = new Element("img[src='http://lorempixel.com/300/300/cats']");
 		                            a.inject(e.node).fade("hide").fade("in");
 		                        counterFluid++;
 		                        // Reset counter
@@ -32,21 +33,10 @@ class PlayerPage extends React.Component {
 
 	render() {
 		return (
-			<div id="viewport">
-			    <div id="wall"></div>
-			</div>	
+		    <div id="wall"></div>
 		);
 	}
-};
+}
 
-// function mapStateToProps(state) {
-// 	return {
-// 	}
-// }
 
-// export default connect(
-// 	mapStateToProps,
-// 	{}
-// )(PlayerPage);
-
-export default PlayerPage;
+export default Wall;
