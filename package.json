@@ -64,7 +64,7 @@
     "react-router": "^2.6.0",
     "react-router-redux": "^4.0.6",
     "redux": "^3.5.2",
-    "redux-duck": "^1.0.1",
+    "redux-actions": "^0.12.0",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
     "sync-request": "^2.0.1"

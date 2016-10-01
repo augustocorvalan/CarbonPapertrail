@@ -8,9 +8,6 @@ import LoadingScreen from 'common/components/LoadingScreen';
 import FlexRow from 'common/components/FlexRow';
 import Episode from 'common/components/Episode';
 
-//actions
-import { loadInitialEpisodes } from '../../modules/episodes';
-
 class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
@@ -62,7 +59,4 @@ function mapStateToProps(state) {
 	}
 }
 
-export default connect(
-	mapStateToProps,
-	{ loadInitialEpisodes }
-)(HomePage);
+export default connect(mapStateToProps)(HomePage);
