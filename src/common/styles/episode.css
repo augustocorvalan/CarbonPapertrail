@@ -14,7 +14,7 @@
     background-color: color(black alpha(-20%));
 
     &.active {
-        background-color: transparent;
+        background-color: color(black alpha(-55%));
         flex-grow: 4;
     }
 }

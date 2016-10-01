@@ -3,7 +3,6 @@
     padding: 1rem 1.5rem;
     color: white;
     text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
-    font-family: 'Josefin+Slab';
     letter-spacing: 2px;
 
 	&.show-full {
