@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from 'common/styles/wallWrapper.css';
 
+import DragScroll from 'common/components/DragScroll';
+
+
 const WallWrapper = ({children}) => (
-	<div class='wall-wrapper'>
+	<DragScroll className='wall-wrapper'>
 		{children}
-	</div>
+	</DragScroll>
 );
 
 export default WallWrapper;

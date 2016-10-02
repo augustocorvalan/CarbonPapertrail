@@ -2,16 +2,8 @@
 	position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.66);
 	text-align: center;
-}
-
-.audio-player-bg {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	filter: blur(5px);
-	z-index: -1;
 }
 
 .audio-player {

@@ -72,7 +72,6 @@ class AudioPlayer extends React.Component {
 	render() {
 		return (
 			<div className="audio-player-container">
-				<div className="audio-player-bg"></div>
 				<div className='audio-player'>
 					<Sound
 						url={this.prepareUrl(this.props.stream_url)}

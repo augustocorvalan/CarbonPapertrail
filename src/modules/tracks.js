@@ -3,7 +3,7 @@ import { handleActions } from 'redux-actions';
 
 //TODO: load this dynamically once SoundCloud authorizes our page...
 const initState = [
-	{ stream_url: "https://api.soundcloud.com/tracks/263314287/stream", title: 'Rockin Back Inside My Heart' }
+	{ stream_url: "https://api.soundcloud.com/tracks/184806739/stream", title: 'Somebody Was Watchin' }
 ];
 
 //Reducer

@@ -2,13 +2,14 @@ import React from "react";
 import { connect } from 'react-redux';
 import style from 'pages/player/style.css';
 
-// import ImageWall from 'common/components/ImageWall';
+import PictureWall from 'common/components/PictureWall';
 import AudioPlayer from 'common/components/AudioPlayer';
 
 class PlayerPage extends React.Component {
 	render() {
 		return (
 			<div>
+				<PictureWall />
 				<AudioPlayer {...this.props.track} />
 			</div>
 		);

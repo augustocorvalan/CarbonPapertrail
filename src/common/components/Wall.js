@@ -1,39 +1,40 @@
 import React from 'react';
 import styles from 'common/styles/wall.css';
 
-//third-party library
-import Wall from 'libraries/Wall';
+//components
+import ReactList from 'react-list';
+import WallImage from 'common/components/WallImage';
 
 class Wall extends React.Component {
-	componentDidMount() {
-		// Define The Wall
-		var maxLength    = 100; // Max Number images
-		var counterFluid = 1;
-		var wallFluid = new Wall("wall", {
-						"preload": true,
-		                "draggable":true,
-		                "inertia":true,
-		                "width":300,
-		                "height":300,
-		                "rangex":[-100,100],
-		                "rangey":[-100,100],
-		                callOnUpdate: function(items){
-		                    items.each(function(e, i){
-		                        var a = new Element("img[src='http://lorempixel.com/300/300/cats']");
-		                            a.inject(e.node).fade("hide").fade("in");
-		                        counterFluid++;
-		                        // Reset counter
-		                        if( counterFluid > maxLength ) counterFluid = 1;
-		                    })
-		                }
-		            });
-		// Init Fluid Wall
-		wallFluid.initWall();
+	renderWallImage(index, key) {
+		return <WallImage height={300} width={300} key={key} />
+	}
+
+	renderGridLine(index, key) {
+		return (
+			<ReactList
+				axis='x'
+				key={key}
+				length={10000}
+				itemRenderer={
+					(column, key) => this.renderWallImage(column, key)
+				}
+				useTranslate3d={true}
+				useStaticSize={true}
+				type='uniform'/>
+		);
 	}
 
 	render() {
 		return (
-		    <div id="wall"></div>
+		    <div className="wall">
+				<ReactList
+					useTranslate3d={true}
+					useStaticSize={true}
+					itemRenderer={::this.renderGridLine}
+					length={1000}
+					type='uniform' />
+		    </div>
 		);
 	}
 }

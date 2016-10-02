@@ -4,11 +4,11 @@ import React from 'react';
 import WallWrapper from 'common/components/WallWrapper';
 import Wall from 'common/components/Wall';
 
-const ImageWall = () => (
+const PictureWall = () => (
 	<WallWrapper>
 		<Wall />
 	</WallWrapper>
 );
 
-export default ImageWall;
+export default PictureWall;
 

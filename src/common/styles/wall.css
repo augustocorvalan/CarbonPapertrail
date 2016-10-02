@@ -1,3 +1,13 @@
-#wall {
-    z-index:1;
+.wall {
+	cursor: grab;
+}
+
+.wall img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
 }
